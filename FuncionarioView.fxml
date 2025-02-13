@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="842.0" prefWidth="1037.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label prefHeight="71.0" prefWidth="564.0" text="Gestão de Funcionários">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField id="textNome" fx:id="txtNome" prefHeight="68.0" prefWidth="1037.0" promptText="Nome">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField id="textCargo" fx:id="txtCargo" prefHeight="64.0" prefWidth="1037.0" promptText="Cargo">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField id="textSalario" fx:id="txtSalario" prefHeight="70.0" prefWidth="1037.0" promptText="Salário">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button mnemonicParsing="false" onAction="#adicionarFuncionario" prefHeight="38.0" prefWidth="87.0" text="Adicionar" />
+      <TableView prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="cloId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="cloNome" prefWidth="75.0" text="Nome" />
+            <TableColumn fx:id="cloCargo" prefWidth="75.0" text="Cargo" />
+            <TableColumn fx:id="cloSalario" prefWidth="75.0" text="Salário" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
