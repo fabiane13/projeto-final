@@ -1,44 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="842.0" prefWidth="1037.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label prefHeight="71.0" prefWidth="564.0" text="Gestão de Funcionários">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
-      <TextField id="textNome" fx:id="txtNome" prefHeight="68.0" prefWidth="1037.0" promptText="Nome">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </TextField>
-      <TextField id="textCargo" fx:id="txtCargo" prefHeight="64.0" prefWidth="1037.0" promptText="Cargo">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </TextField>
-      <TextField id="textSalario" fx:id="txtSalario" prefHeight="70.0" prefWidth="1037.0" promptText="Salário">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </TextField>
-      <Button mnemonicParsing="false" onAction="#adicionarFuncionario" prefHeight="38.0" prefWidth="87.0" text="Adicionar" />
-      <TableView prefHeight="200.0" prefWidth="200.0">
-        <columns>
-          <TableColumn fx:id="cloId" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="cloNome" prefWidth="75.0" text="Nome" />
-            <TableColumn fx:id="cloCargo" prefWidth="75.0" text="Cargo" />
-            <TableColumn fx:id="cloSalario" prefWidth="75.0" text="Salário" />
-        </columns>
-      </TableView>
+      <HBox prefHeight="1266.0" prefWidth="1104.0">
+         <children>
+            <ImageView id="imageviewFoto" fitHeight="220.0" fitWidth="178.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1468.0" prefWidth="1395.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="37.0" prefWidth="600.0" text="Cadastro de Funcionários">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="48.0" prefWidth="590.0" text="* Dados Pessoais">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField id="textId" fx:id="txtId" prefHeight="65.0" prefWidth="1037.0" promptText="Id" text="ID">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textNome" fx:id="txtNome" prefHeight="65.0" prefWidth="1037.0" promptText="Nome Completo" text="Nome Completo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textCargo" fx:id="txtNascimento" prefHeight="65.0" prefWidth="1037.0" promptText="Nascimento" text="Data de Nascimento">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textSalario" fx:id="txtSalario" prefHeight="65.0" prefWidth="1037.0" promptText="Salário" text="Sexo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtEndereço" prefHeight="65.0" prefWidth="1037.0" promptText="Estado Civil" text="Estado Civil">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textConjuge" fx:id="txtConjuge" prefHeight="65.0" prefWidth="1037.0" promptText="Conjuge" text="Conjuge (Nome e Data de Nascimento)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textDependentes" fx:id="txtDependentes" prefHeight="65.0" prefWidth="1037.0" promptText="Dependentes" text="Dependentes (Nome e Data de Nascimento)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textNacionalidade" fx:id="txtNacionalidade" prefHeight="65.0" prefWidth="1037.0" promptText="Nacionalidade" text="Nacionalidade">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textNaturalidade" fx:id="txtNaturalidade" prefHeight="65.0" prefWidth="1037.0" promptText="Naturalidade " text="Naturalidade (Cidade e Estado)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textCpf" fx:id="txtCpf" prefHeight="65.0" prefWidth="1037.0" promptText="Cpf" text="CPF">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textRg" fx:id="txtRg" prefHeight="65.0" prefWidth="1037.0" promptText="Rg" text="RG">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textEndereço" prefHeight="65.0" prefWidth="1037.0" promptText="Endereço" text="Endereço Completo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtTelefone" prefHeight="65.0" prefWidth="1037.0" promptText="Telefone" text="Telefone">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textEmail" prefHeight="65.0" prefWidth="1037.0" promptText="Email" text="Email">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textFiliação" fx:id="txtFiliação" prefHeight="65.0" prefWidth="1037.0" promptText="Filiação" text="Filiação">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textTipoSanguineo" fx:id="txtTipoSanguineo" prefHeight="65.0" prefWidth="1037.0" promptText="Tipo" text="Tipo Sanguineo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textContato" fx:id="txtContato" prefHeight="65.0" prefWidth="1037.0" promptText="Contato" text="Contato em Caso de Emergência (Nome e Telefone)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" text="* Dados Profissionais">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField id="textCargo" fx:id="txtCargo" prefHeight="65.0" prefWidth="1037.0" promptText="Cargo" text="Cargo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textDepartamento" fx:id="txtDepartamento" prefHeight="65.0" prefWidth="1037.0" promptText="Departamento" text="Departamento">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textFunção" fx:id="textFunção" prefHeight="65.0" prefWidth="1104.0" promptText="Função" text="Descrição das Funções">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textMáquinas" fx:id="textMáquinas" prefHeight="65.0" prefWidth="1037.0" promptText="Máquinas" text="Máquinas que opera">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textEpis" fx:id="txtEpis" prefHeight="65.0" prefWidth="1091.0" promptText="Epis" text="EPIs (Lista de EPIs Utilizados e Datas de Validade)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textDatadeAdmissão" fx:id="txtDatadeAdmissão" prefHeight="65.0" prefWidth="1037.0" promptText="DatadeAdmissão" text="Data de Admissão">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textSalário" prefHeight="65.0" prefWidth="1037.0" promptText="Salário" text="Salário">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textDadosBancários" prefHeight="65.0" prefWidth="1037.0" promptText="DadosBancários" text="Dados Bancários ( P/ Depósito Salário)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textBenefícios" fx:id="txtBenefícios" prefHeight="65.0" prefWidth="1037.0" promptText="Benefícios" text="Benefícios &amp; Bonificações">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textNíveldeEscolaridade" fx:id="txtNíveldeEscolaridade" prefHeight="65.0" prefWidth="1037.0" promptText="NíveldeEscolaridade" text="Nível de Escolaridade">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textCtps" fx:id="txtCtps" prefHeight="65.0" prefWidth="1037.0" promptText="Ctps" text="CTPS (Número, Série e Data de Emissão)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textPis" fx:id="txtPis" prefHeight="65.0" prefWidth="1037.0" promptText="Pis" text="PIS/Pasep">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtContrato" prefHeight="65.0" prefWidth="1037.0" promptText="Contrato" text="Tipo de Contrato(Temporário/CLT)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textHorário" fx:id="txtHorário" prefHeight="65.0" prefWidth="1037.0" promptText="Horário" text="Horário de Trabalho (Dias, Turno e Carga Horária)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textPromoções" fx:id="txtPromoções" prefHeight="65.0" prefWidth="1037.0" promptText="Promoções" text="Promoções (Data, Cargo, Descrição e Salário Atualizado)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textAcidente" fx:id="txtAcidente" prefHeight="65.0" prefWidth="1104.0" promptText="Acidente" text="Acidentes de Trabalho (Data, Descrição e Medidas Tomadas)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="textAdvertências" fx:id="txtAdvertências" prefHeight="65.0" prefWidth="1037.0" promptText="Advertências" text="Advertências (Data e Ocorrência)">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
    </children>
-</VBox>
+</AnchorPane>
