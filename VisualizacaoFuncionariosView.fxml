@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="704.0" text="Cadastro de Funcionários / Visualização">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" onAction="#adicionarFuncionário" prefHeight="39.0" prefWidth="100.0" text="Adicionar" textFill="#4b0ce0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab id="textDadosPessoais" fx:id="txtDadosPessoais" styleClass="-fx-font-weight: bold;" text="Dados Pessoais">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="1364.0">
+                     <children>
+                        <TableView prefHeight="200.0" prefWidth="1428.0">
+                          <columns>
+                            <TableColumn id="colId" fx:id="colId" prefWidth="34.0" text="ID" />
+                            <TableColumn id="colNome" prefWidth="117.33331298828125" text="Nome" />
+                              <TableColumn id="ColDatadeNascimento" prefWidth="118.00003051757812" text="Dt de Nascimento" />
+                              <TableColumn id="colSexo" minWidth="6.6666259765625" prefWidth="48.6666259765625" text="Sexo" />
+                              <TableColumn id="colEstadoCivil" minWidth="0.0" prefWidth="72.0" text="Estado Civil" />
+                              <TableColumn id="colConjugue" prefWidth="72.0" text="Conjuge" />
+                              <TableColumn id="colDependentes" prefWidth="83.33328247070312" text="Dependentes" />
+                              <TableColumn id="colNacionalidade" prefWidth="98.6666259765625" text="Nacionalidade" />
+                              <TableColumn id="colNaturalidade" prefWidth="92.0" text="Naturalidade" />
+                              <TableColumn id="colCpf" prefWidth="94.2222900390625" text="CPF" />
+                              <TableColumn id="colRg" prefWidth="50.888916015625" text="RG" />
+                              <TableColumn id="colEndereço" prefWidth="127.11102294921875" text="Endereço" />
+                              <TableColumn id="colTelefone" prefWidth="80.66680908203125" text="Telefone" />
+                              <TableColumn id="colEmail" prefWidth="66.0" text="Email" />
+                              <TableColumn id="colFiliação" prefWidth="64.666748046875" text="Filiação" />
+                              <TableColumn id="colTipoSanguineo" prefWidth="75.333251953125" text="Tipo Sangue" />
+                              <TableColumn id="colContato" prefWidth="102.0" text="Emergencia" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab id="textDadosProfissionais" fx:id="txtDadosProfissionais" text="Dados Profissionais">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="1335.0">
+                     <children>
+                        <TableView prefHeight="200.0" prefWidth="1400.0">
+                          <columns>
+                            <TableColumn id="colCargo" prefWidth="66.6666589975357" text="Cargo" />
+                            <TableColumn id="colDepartamento" prefWidth="56.0" text="Depto" />
+                              <TableColumn id="colFunção" minWidth="5.999969482421875" prefWidth="91.33333587646484" text="Função" />
+                              <TableColumn id="colMáquinas" prefWidth="107.33332824707031" text="Máquinas Opera" />
+                              <TableColumn id="colEpis" minWidth="0.0" prefWidth="59.33331298828125" text="EPIs" />
+                              <TableColumn id="colDatadeAdmissão" prefWidth="99.33331298828125" text="Data Admissão" />
+                              <TableColumn id="colSalário" text="Salário" />
+                              <TableColumn id="colDadosBancários" prefWidth="112.6666259765625" text="Dados Bancários" />
+                              <TableColumn id="colBenefícios" prefWidth="68.0" text="Benefícios" />
+                              <TableColumn id="colEscolaridade" prefWidth="86.0" text="Escolaridade" />
+                              <TableColumn id="colCtps" prefWidth="62.66668701171875" text="CTPS" />
+                              <TableColumn id="colPis" prefWidth="72.6666259765625" text="PIS/Pasep" />
+                              <TableColumn prefWidth="70.666748046875" text="Contrato" />
+                              <TableColumn minWidth="0.0" prefWidth="0.0" text="Acidentes de Trabalho" />
+                              <TableColumn id="colHorário" prefWidth="104.0" text="Horário Trabalho" />
+                              <TableColumn id="colPromoções" prefWidth="75.0" text="Promoções" />
+                              <TableColumn id="colAcidente" prefWidth="95.333251953125" text="Acidentes Trab." />
+                              <TableColumn id="colAdvertências" prefWidth="89.3333740234375" text="Advertências" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>
